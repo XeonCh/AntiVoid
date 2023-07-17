@@ -1,0 +1,15 @@
+---
+name: AntiVoid
+version: 0.0.1
+main: xeonch\antivoid\Loader
+api: 5.0.0
+src-namespace-prefix: xeonch\antivoid
+
+permissions:
+  antivoid.cmd:
+    default: op
+  antivoid.enable.cmd:
+    default: op
+  antivoid.disable.cmd:
+    default: op
+...
