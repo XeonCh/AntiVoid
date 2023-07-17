@@ -1,0 +1,16 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/XeonCh/AntiVoid
+build-by-default: true
+branches:
+- main
+projects:
+  AntiVoid:
+    icon: "icon.gif"
+    path: ""
+    php: 8.1
+    libs:
+      - src: "XeonCh/Commando/Commando"
+        version: ^3.0.0
+        branch: "master"
+      - src: muqsit/simplepackethandler/SimplePacketHandler
+        version: ^0.1.3
+...
