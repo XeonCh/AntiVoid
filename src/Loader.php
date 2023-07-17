@@ -27,6 +27,7 @@ class Loader extends PluginBase {
 
     public function onEnable():void
     {
+        $this->loadVirion();
         $this->saveDefaultConfig();
         $this->setting = new Config($this->getDataFolder() . "setting.yml", Config::YAML, [
             "enable-antivoid" => true
@@ -43,7 +44,7 @@ class Loader extends PluginBase {
         ] as $virion => $class
         ) {
             if (!class_exists($class)) {
-                $this->getLogger()->error($virion . " virion not found.");
+                $this->getLogger()->error($virion . " virion not found. Download this pluggin on poggit");
                 $this->getServer()->getPluginManager()->disablePlugin($this);
                 return;
             }
